@@ -1,0 +1,5 @@
+<ul class="forecast-cards">
+    <li *ngFor="let weather of dailyWeather">
+        <app-card [weatherInfo]="weather"></app-card>
+    </li>
+</ul>

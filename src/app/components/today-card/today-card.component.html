@@ -1,1 +1,23 @@
-<p>today-card works!</p>
+<div class="today-component">
+    <div class="today-info">
+        <div class="loc-time">
+            <span class="loc">{{lat}}, {{lon}}</span><br/>
+            <span class="time">{{todayDateString}}</span>
+        </div>
+
+        <div class="other">
+            <span>Humidity:</span><span>{{todayWeatherHumidity}} %</span>
+            <span>Wind:</span><span>{{todayWeatherWind}} mph</span>
+        </div>
+    </div>
+    <div class="card today">
+        <h2 class="curr-temp">{{todayWeatherTemp}}&deg;K</h2>
+        <img src="https://via.placeholder.com/150">
+        <div class="minmax-temp">
+            <span class="min-temp">{{minTemp}}&deg;F</span> / <span class="max-temp">{{maxTemp}}&deg;F</span>
+        </div>
+    </div>
+    <div class="view-hourly">
+        <a href="#">TODO</a>
+    </div>
+</div>
